@@ -24,82 +24,74 @@ export default function BugParticles() {
   const useTheme = useContext(ThemeContext);
   const isDark = useTheme.theme === "dark";
   return (
-    <div style={{ maxHeight: "100%" }}>
-      <Particles
-        params={{
-          interactivity: {
-            events: {
-              onHover: {
-                enable: true,
-                mode: "bubble",
-              },
-            },
-            modes: {
-              bubble: {
-                distance: 40,
-                duration: 5,
-                opacity: 100,
-                size: 10,
-              },
+    <Particles
+      style={{ display: "block", marginLeft: "auto", marginRight: "auto"}}
+      params={{
+        interactivity: {
+          events: {
+            onHover: {
+              enable: true,
+              mode: "bubble",
             },
           },
-          particles: {
+          modes: {
+            bubble: {
+              distance: 40,
+              duration: 5,
+              opacity: 100,
+              size: 10,
+            },
+          },
+        },
+        particles: {
+          color: {
+            value: isDark ? "#fff" : "#000",
+          },
+          links: {
             color: {
               value: isDark ? "#fff" : "#000",
             },
-            links: {
-              color: {
-                value: isDark ? "#fff" : "#000",
-              },
-              distance: 25,
-              enable: true,
-              opacity: 0.9,
-            },
-            move: {
-              enable: true,
-              outModes: {
-                default: "bounce",
-                bottom: "bounce",
-                left: "bounce",
-                right: "bounce",
-                top: "bounce",
-              },
-              speed: 1,
-            },
-            number: {
-              value: isMobile ? 150 : 400,
-            },
-            size: {
-              value: 2,
-              animation: {
-                minimumValue: 0.3,
-                speed: 40,
-              },
-            },
-          },
-          polygon: {
-            draw: {
-              enable: true,
-              stroke: {
-                width: 1,
-                opacity: 0.4,
-              },
-            },
+            distance: 25,
             enable: true,
-            inline: {
-              arrangement: "equidistant",
-            },
-            move: {
-              radius: 5,
-              type: "path",
-            },
-            scale: 0.6,
-            type: "inline",
-            url:
-              "https://www.flaticon.com/svg/static/icons/svg/1320/1320554.svg",
+            opacity: 0.9,
           },
-        }}
-      />
-    </div>
+          move: {
+            enable: true,
+            outModes: {
+              default: "bounce",
+              bottom: "bounce",
+              left: "bounce",
+              right: "bounce",
+              top: "bounce",
+            },
+            speed: 1,
+          },
+          number: {
+            value: isMobile ? 150 : 400,
+          },
+          size: {
+            value: 2,
+            animation: {
+              minimumValue: 0.3,
+              speed: 40,
+            },
+          },
+        },
+        polygon: {
+          enable: true,
+          inline: {
+            arrangement: "equidistant",
+          },
+          move: {
+            radius: 5,
+            type: "path",
+          },
+          type: "inline",
+          url: "https://www.flaticon.com/svg/static/icons/svg/1320/1320554.svg",
+        },
+      }}
+      height={isMobile ? undefined : 550}
+      width={isMobile ? undefined : 550}
+    />
   );
 }
