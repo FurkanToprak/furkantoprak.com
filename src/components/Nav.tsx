@@ -2,7 +2,7 @@ import React, { useState, useContext } from "react";
 import { Navbar, Nav } from "react-bootstrap";
 import ThemeButton from "./ThemeButton";
 import ThemeContext from "../contexts/Theme";
-import CodeIcon from "../components/CodeIcon";
+import CodeIcon from "./Icons/CodeIcon";
 
 const routes = [
   { to: "/", label: "Home" },

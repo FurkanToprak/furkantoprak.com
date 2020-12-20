@@ -1,7 +1,7 @@
 import React, { useState } from "react";
-import BookIcon from "./BookIcon";
-import HeartIcon from "./HeartIcon";
-import UpIcon from "./UpIcon";
+import BookIcon from "./Icons/BookIcon";
+import HeartIcon from "./Icons/HeartIcon";
+import UpIcon from "./Icons/UpIcon";
 
 export default function Footer() {
   const [hovering, setHovering] = useState(false);

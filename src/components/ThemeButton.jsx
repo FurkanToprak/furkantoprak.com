@@ -1,7 +1,7 @@
 import ToggleButton from "react-toggle-button";
 import React, { useState, useContext } from "react";
-import SunIcon from "./SunIcon";
-import MoonIcon from "./MoonIcon";
+import SunIcon from "./Icons/SunIcon";
+import MoonIcon from "./Icons/MoonIcon";
 import ThemeContext from "../contexts/Theme";
 
 export default function ThemeButton() {
