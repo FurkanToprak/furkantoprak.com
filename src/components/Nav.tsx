@@ -20,7 +20,6 @@ const NavComponent = () => {
     return (
       <Nav.Link
         style={{
-          color: isDark ? "#cea2ac" : "#25283d",
           opacity: hovered === index ? 1 : 0.75,
           border:
             hovered === index
@@ -35,7 +34,13 @@ const NavComponent = () => {
           setHovered(-1);
         }}
       >
-        <h4>{label}</h4>
+        <h4
+          style={{
+            color: isDark ? "#cea2ac" : "#25283d",
+          }}
+        >
+          {label}
+        </h4>
       </Nav.Link>
     );
   });
