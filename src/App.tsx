@@ -22,7 +22,7 @@ function App() {
     <div
       style={{
         backgroundColor: isDark ? "#25283d" : "#cea2ac",
-        color: theme ? "white" : "black",
+        color: isDark ? "white" : "black",
         minHeight: "100%",
         display: "flex",
         flexDirection: "column",
