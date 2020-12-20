@@ -22,6 +22,7 @@ export default function BugParticles() {
   };
   const isMobile = mobileCheck();
   const useTheme = useContext(ThemeContext);
+  const isDark = useTheme.theme === "dark";
   return (
     <div style={{ maxHeight: "100%" }}>
       <Particles
@@ -44,11 +45,11 @@ export default function BugParticles() {
           },
           particles: {
             color: {
-              value: useTheme.theme ? "#fff" : "#000",
+              value: isDark ? "#fff" : "#000",
             },
             links: {
               color: {
-                value: useTheme.theme ? "#fff" : "#000",
+                value: isDark ? "#fff" : "#000",
               },
               distance: 25,
               enable: true,

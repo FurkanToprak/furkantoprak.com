@@ -7,10 +7,11 @@ import ThemeContext from "../contexts/Theme";
 export default function ThemeButton() {
   const [buttonValue, setButtonValue] = useState(false);
   const themeUse = useContext(ThemeContext);
+  const isDark = themeUse.theme === "dark";
   return (
     <ToggleButton
-      inactiveLabel={<MoonIcon />}
-      activeLabel={<SunIcon />}
+      inactiveLabel={<SunIcon />}
+      activeLabel={<MoonIcon />}
       activeLabelStyle={{
         fontSize: "15px",
         color: "white",
@@ -19,27 +20,27 @@ export default function ThemeButton() {
         fontSize: "15px",
         color: "white",
       }}
-      value={buttonValue}
+      value={isDark}
       onToggle={() => {
         setButtonValue(!buttonValue);
         themeUse.toggleTheme();
       }}
       colors={{
         activeThumb: {
-          base: "#25283D",
-          hover: "#363a59",
+          base: "#cea2ac",
+          hover: "#C08794",
         },
         inactiveThumb: {
-          base: "#cea2ac",
-          hover: "#C08794",
-        },
-        active: {
-          base: "#cea2ac",
-          hover: "#C08794",
-        },
-        inactive: {
           base: "#25283D",
           hover: "#363a59",
+        },
+        active: {
+          base: "#25283D",
+          hover: "#363a59",
+        },
+        inactive: {
+          base: "#cea2ac",
+          hover: "#C08794",
         },
       }}
       containerStyle={{
@@ -50,11 +51,13 @@ export default function ThemeButton() {
         borderRadius: "50%",
         height: "40px",
         width: "40px",
+        border: "2px solid white",
       }}
       trackStyle={{
         height: "30px",
         width: "100px",
         fontSize: "3em",
+        border: "2px solid white",
       }}
       thumbAnimateRange={[-10, 70]}
       animateThumbStyleHover={(n) => {

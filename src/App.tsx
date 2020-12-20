@@ -10,28 +10,36 @@ import Projects from "./pages/Projects";
 import Contact from "./pages/Contact";
 
 function App() {
-  const [theme, setTheme] = useState(false);
+  const defaultTheme = localStorage.getItem("theme") || "light";
+  const [theme, setTheme] = useState(defaultTheme);
   const toggleTheme = () => {
-    setTheme(!theme);
+    const newTheme = theme === "dark" ? "light" : "dark";
+    setTheme(newTheme);
+    localStorage.setItem("theme", newTheme);
   };
-
+  const isDark = theme === "dark";
   return (
     <div
       style={{
-        backgroundColor: theme ? "#25283d" : "#cea2ac",
+        backgroundColor: isDark ? "#25283d" : "#cea2ac",
         color: theme ? "white" : "black",
         minHeight: "100%",
         display: "flex",
         flexDirection: "column",
         justifyContent: "space-between",
-        transition: "all 0.25s linear"
+        transition: "all 0.25s linear",
       }}
     >
       <ThemeContext.Provider value={{ theme, toggleTheme }}>
         <div>
           <Nav />
           <div
-            style={{ minHeight: "100%", marginLeft: "5%", marginRight: "5%", marginTop: "5%" }}
+            style={{
+              minHeight: "100%",
+              marginLeft: "5%",
+              marginRight: "5%",
+              marginTop: "5%",
+            }}
           >
             <Router>
               <Switch>

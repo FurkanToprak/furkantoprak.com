@@ -2,7 +2,7 @@ import React, { useState, useContext } from "react";
 import { Navbar, Nav } from "react-bootstrap";
 import ThemeButton from "./ThemeButton";
 import ThemeContext from "../contexts/Theme";
-import CodeIcon from "../components/CodeIcon"
+import CodeIcon from "../components/CodeIcon";
 
 const routes = [
   { to: "/", label: "Home" },
@@ -15,15 +15,16 @@ const routes = [
 const NavComponent = () => {
   const [hovered, setHovered] = useState(-1);
   const useTheme = useContext(ThemeContext);
+  const isDark = useTheme.theme === "dark";
   const links = routes.map(({ to, label }, index: number) => {
     return (
       <Nav.Link
         style={{
-          color: "rgb(131, 52, 122)",
+          color: isDark ? "#cea2ac" : "#25283d",
           opacity: hovered === index ? 1 : 0.75,
           border:
             hovered === index
-              ? "3px dashed rgb(131, 52, 122)"
+              ? `3px dashed ${isDark ? "#cea2ac" : "#25283d"}`
               : "3px solid rgb(131, 52, 122, 0)",
         }}
         href={to}
@@ -42,8 +43,9 @@ const NavComponent = () => {
   return (
     <Navbar expand="lg" sticky="top">
       <Navbar.Brand href="/">
-        <h3 style={{ color: useTheme.theme ? "white" : "black" }}>
-          <CodeIcon/>furkan toprak
+        <h3 style={{ color: isDark ? "white" : "black" }}>
+          <CodeIcon />
+          furkan toprak
         </h3>
       </Navbar.Brand>
       <Navbar.Toggle aria-controls="basic-navbar-nav" />
