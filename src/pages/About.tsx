@@ -135,7 +135,8 @@ function About() {
         <a href="/writings">
           <u>writings</u>
         </a>{" "}
-        tab for my essays and papers.
+        tab for my essays and papers. If you have a project you would like me to
+        collaborate on, shoot me an email.
       </div>
       <HR />
       <div>
@@ -177,7 +178,7 @@ function About() {
                 setHoveredResume(false);
               }}
             >
-              <u>Toggle Resume</u>
+              <u>resume</u>
             </Accordion.Toggle>
             <Accordion.Collapse eventKey="0">
               <Card.Body>
