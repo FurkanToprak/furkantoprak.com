@@ -15,17 +15,16 @@ export default function Home() {
               "stinkiest man alive",
               "aspiring übermensch",
               "possible ghost",
-              "answers to none",
               "big boy",
               "human incarnation of the white rabbit",
               "mr. coffee breath",
-              "barely living in the present",
-              "likely to be arrested one day",
               "time traveler",
+              "confused",
               "mental math enthusiast",
               "psuedo-intellectual",
               "the rat king",
               "mr. clean fanboy",
+              "the favorite grandson",
             ]}
             speed={45}
             eraseSpeed={40}
