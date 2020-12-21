@@ -1,6 +1,115 @@
 import { Accordion, Card } from "react-bootstrap";
 import HR from "../components/HR";
 import { useState } from "react";
+
+function EmbedResume() {
+  return (
+    <iframe
+      title="my resume"
+      src="https://drive.google.com/file/d/1rAkabK41Bc8SnQ_r8izUcFF3LqfXoM9V/preview"
+      width="100%"
+      height={300}
+    ></iframe>
+  );
+}
+
+function ReadingList() {
+  return (
+    <ul>
+      <li>
+        <u>
+          <i>Harry Potter and the Sorcerer's Stone</i>
+        </u>{" "}
+        by J. K. Rowling
+      </li>
+      <li>
+        <u>
+          <i>Evolutionary Dynamics</i>
+        </u>{" "}
+        by Martin A. Nowak
+      </li>
+      <li>
+        <u>
+          <i>Beyond Good and Evil</i>
+        </u>{" "}
+        by Frederich Nietzche
+      </li>
+      <li>
+        <u>
+          <i>Hands-On Machine Learning with Scikit-Learn & TensorFlow</i>
+        </u>{" "}
+        by Aurelien Geron
+      </li>
+      <li>
+        <u>
+          <i>Give People Money</i>
+        </u>{" "}
+        by Annie Lowrey
+      </li>
+      <li>
+        <u>
+          <i>1984</i>
+        </u>{" "}
+        by George Orwell
+      </li>
+      <li>
+        <u>
+          <i>Discrete Mathematics and Its Applications</i>
+        </u>{" "}
+        by Kenneth H. Rosen
+      </li>
+      <li>
+        <u>
+          <i>Maps of Meaning</i>
+        </u>{" "}
+        by Jordan B. Peterson
+      </li>
+      <li>
+        <u>
+          <i>On The Social Contract</i>
+        </u>{" "}
+        by Jean-Jacques Rousseau
+      </li>
+      <li>
+        <u>
+          <i>You Are Not So Smart</i>
+        </u>{" "}
+        by David McRaney
+      </li>
+      <li>
+        <u>
+          <i>A Wrinkle In Time</i>
+        </u>{" "}
+        by Madeleine L'Engle
+      </li>
+      <li>
+        <u>
+          <i>The Count of Monte Cristo</i>
+        </u>{" "}
+        by Alexandre Dumas
+      </li>
+      <li>
+        <u>
+          <i>Night</i>
+        </u>{" "}
+        by Elie Wiesel
+      </li>
+      <li>
+        <u>
+          <i>Hamlet</i>
+        </u>{" "}
+        by William Shakespeare
+      </li>
+      <li>
+        <u>
+          <i>Hard Times</i>
+        </u>{" "}
+        by Charles Dickens
+      </li>
+    </ul>
+  );
+}
+
 function About() {
   const [hoveredResume, setHoveredResume] = useState(false);
   return (
@@ -71,7 +180,9 @@ function About() {
               <u>Toggle Resume</u>
             </Accordion.Toggle>
             <Accordion.Collapse eventKey="0">
-              <Card.Body>Resume Here</Card.Body>
+              <Card.Body>
+                <EmbedResume />
+              </Card.Body>
             </Accordion.Collapse>
           </Accordion>
         </div>
@@ -79,98 +190,7 @@ function About() {
       <HR />
       <div>
         <h5 style={{ textAlign: "center" }}>books that have changed my life</h5>
-        <ul>
-          <li>
-            <u>
-              <i>Harry Potter and the Sorcerer's Stone</i>
-            </u>{" "}
-            by J. K. Rowling
-          </li>
-          <li>
-            <u>
-              <i>Evolutionary Dynamics</i>
-            </u>{" "}
-            by Martin A. Nowak
-          </li>
-          <li>
-            <u>
-              <i>Beyond Good and Evil</i>
-            </u>{" "}
-            by Frederich Nietzche
-          </li>
-          <li>
-            <u>
-              <i>Hands-On Machine Learning with Scikit-Learn & TensorFlow</i>
-            </u>{" "}
-            by Aurelien Geron
-          </li>
-          <li>
-            <u>
-              <i>Give People Money</i>
-            </u>{" "}
-            by Annie Lowrey
-          </li>
-          <li>
-            <u>
-              <i>1984</i>
-            </u>{" "}
-            by George Orwell
-          </li>
-          <li>
-            <u>
-              <i>Discrete Mathematics and Its Applications</i>
-            </u>{" "}
-            by Kenneth H. Rosen
-          </li>
-          <li>
-            <u>
-              <i>Maps of Meaning</i>
-            </u>{" "}
-            by Jordan B. Peterson
-          </li>
-          <li>
-            <u>
-              <i>On The Social Contract</i>
-            </u>{" "}
-            by Jean-Jacques Rousseau
-          </li>
-          <li>
-            <u>
-              <i>You Are Not So Smart</i>
-            </u>{" "}
-            by David McRaney
-          </li>
-          <li>
-            <u>
-              <i>A Wrinkle In Time</i>
-            </u>{" "}
-            by Madeleine L'Engle
-          </li>
-          <li>
-            <u>
-              <i>The Count of Monte Cristo</i>
-            </u>{" "}
-            by Alexandre Dumas
-          </li>
-          <li>
-            <u>
-              <i>Night</i>
-            </u>{" "}
-            by Elie Wiesel
-          </li>
-          <li>
-            <u>
-              <i>Hamlet</i>
-            </u>{" "}
-            by William Shakespeare
-          </li>
-          <li>
-            <u>
-              <i>Hard Times</i>
-            </u>{" "}
-            by Charles Dickens
-          </li>
-        </ul>
+        <ReadingList />
       </div>
     </div>
   );
