@@ -5,11 +5,11 @@ import ThemeContext from "../contexts/Theme";
 import CodeIcon from "./Icons/CodeIcon";
 
 const routes = [
-  { to: "/", label: "Home" },
-  { to: "/about", label: "About" },
-  { to: "/writings", label: "Writings" },
-  { to: "/projects", label: "Projects" },
-  { to: "/contact", label: "Contact" },
+  { to: "/", label: "home" },
+  { to: "/about", label: "about" },
+  { to: "/writings", label: "writings" },
+  { to: "/projects", label: "projects" },
+  { to: "/contact", label: "contact" },
 ];
 
 const NavComponent = () => {
@@ -46,7 +46,13 @@ const NavComponent = () => {
   });
 
   return (
-    <Navbar expand="lg" sticky="top">
+    <Navbar
+      expand="lg"
+      sticky="top"
+      style={{
+        backgroundColor: isDark ? "#25283d" : "#cea2ac",
+      }}
+    >
       <Navbar.Brand href="/">
         <h3 style={{ color: isDark ? "white" : "black" }}>
           <CodeIcon />
