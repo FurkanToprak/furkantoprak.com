@@ -1,6 +1,7 @@
 import { Accordion, Card } from "react-bootstrap";
 import HR from "../components/HR";
-import { useState } from "react";
+import { useState, useContext } from "react";
+import Theme from "../contexts/Theme";
 
 function EmbedResume() {
   return (
@@ -111,6 +112,8 @@ function ReadingList() {
 }
 
 function About() {
+  const useTheme = useContext(Theme);
+  const isDark = useTheme.theme === "dark";
   const [hoveredResume, setHoveredResume] = useState(false);
   return (
     <div>
@@ -168,7 +171,7 @@ function About() {
                 width: "100%",
                 textAlign: "center",
                 border: hoveredResume
-                  ? "3px dashed white"
+                  ? `3px dashed ${isDark ? "#cea2ac" : "#25283d"}`
                   : "3px solid rgba(0,0,0,0)",
               }}
               onMouseOver={() => {
