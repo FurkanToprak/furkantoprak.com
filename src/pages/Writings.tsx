@@ -9,7 +9,7 @@ interface WritingPostProps {
 }
 
 const writings: WritingPostProps[] = [
-  { title: "test 1", content: "# Hello\n##me" },
+  { title: "test 1", content: "# Hello\n## me" },
   { title: "test 2", content: "`hello`" },
   { title: "test 3", content: "aaa" },
 ];
@@ -26,9 +26,10 @@ export function WritingPost(props: WritingPostProps) {
         style={{
           width: "100%",
           textAlign: "center",
-          border: hoveredPost
-            ? `3px dashed ${isDark ? "#cea2ac" : "#25283d"}`
-            : "3px solid rgba(0,0,0,0)",
+          border: `3px ${hoveredPost ? "dashed" : "solid"} ${
+            isDark ? "#cea2ac" : "#25283d"
+          }`,
+          marginBottom: "20px",
         }}
         onMouseOver={() => {
           setHoveredPost(true);
