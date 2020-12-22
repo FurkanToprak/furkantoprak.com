@@ -90,7 +90,7 @@ export default function BugParticles() {
           url: "https://www.flaticon.com/svg/static/icons/svg/1320/1320554.svg",
         },
       }}
-      height={isMobile ? undefined : 550}
+      height={isMobile ? 250 : 550}
       width={isMobile ? undefined : 550}
     />
   );
