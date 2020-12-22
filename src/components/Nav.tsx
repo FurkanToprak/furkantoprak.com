@@ -49,6 +49,10 @@ const NavComponent = () => {
     <Navbar
       expand="lg"
       sticky="top"
+      style={{
+        backgroundColor: isDark ? "#25283d" : "#cea2ac",
+      }}
+      collapseOnSelect
     >
       <Navbar.Brand href="/">
         <h3 style={{ color: isDark ? "white" : "black" }}>
@@ -56,7 +60,10 @@ const NavComponent = () => {
           furkan toprak
         </h3>
       </Navbar.Brand>
-      <Navbar.Toggle aria-controls="basic-navbar-nav" />
+      <Navbar.Toggle
+        aria-controls="basic-navbar-nav"
+        className={`navbar-${isDark ? "dark" : "light"}`}
+      />
       <Navbar.Collapse id="basic-navbar-nav">{links}</Navbar.Collapse>
       <ThemeButton />
     </Navbar>

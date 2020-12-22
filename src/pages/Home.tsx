@@ -25,9 +25,9 @@ export default function Home() {
               "mr. clean fanboy",
               "the favorite grandson",
             ]}
-            speed={45}
-            eraseSpeed={40}
-            eraseDelay={500}
+            speed={40}
+            eraseSpeed={35}
+            eraseDelay={400}
           />
         </h2>
       </div>
