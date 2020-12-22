@@ -109,7 +109,7 @@ const projects: TimelineElementProps[] = [
               rel="noreferrer"
             >
               <u>Check out the website.</u>
-            </a>
+            </a>{" "}
             This might take a second to load.
           </li>
         </ul>

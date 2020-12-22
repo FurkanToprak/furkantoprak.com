@@ -170,9 +170,8 @@ function About() {
               style={{
                 width: "100%",
                 textAlign: "center",
-                border: hoveredResume
-                  ? `3px dashed ${isDark ? "#cea2ac" : "#25283d"}`
-                  : "3px solid rgba(0,0,0,0)",
+                border: `3px ${hoveredResume ? "dashed" : "solid"} ${isDark ? "#cea2ac" : "#25283d"}`
+
               }}
               onMouseOver={() => {
                 setHoveredResume(true);
