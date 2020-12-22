@@ -1,0 +1,1 @@
+"npm run build && cd build/ && git init && git add . && git commit -m "Routing broken." && git remote add origin https://github.com/FurkanToprak/furkantoprak.github.io.git && git push --set-upstream origin master --force && cd .."

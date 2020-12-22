@@ -6,10 +6,10 @@ import CodeIcon from "./Icons/CodeIcon";
 
 const routes = [
   { to: "/", label: "home" },
-  { to: "/about", label: "about" },
-  { to: "/writings", label: "writings" },
-  { to: "/projects", label: "projects" },
-  { to: "/contact", label: "contact" },
+  { to: "/#/about", label: "about" },
+  { to: "/#/writings", label: "writings" },
+  { to: "/#/projects", label: "projects" },
+  { to: "/#/contact", label: "contact" },
 ];
 
 const NavComponent = () => {
@@ -49,9 +49,6 @@ const NavComponent = () => {
     <Navbar
       expand="lg"
       sticky="top"
-      style={{
-        backgroundColor: isDark ? "#25283d" : "#cea2ac",
-      }}
     >
       <Navbar.Brand href="/">
         <h3 style={{ color: isDark ? "white" : "black" }}>
