@@ -170,7 +170,7 @@ function About() {
               style={{
                 width: "100%",
                 textAlign: "center",
-                border: `3px ${hoveredResume ? "dashed" : "solid"} ${isDark ? "#cea2ac" : "#25283d"}`
+                border: `3px ${hoveredResume ? "dashed" : "solid"} ${isDark ? "white" : "black"}`
 
               }}
               onMouseOver={() => {
