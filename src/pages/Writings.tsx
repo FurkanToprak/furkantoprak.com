@@ -22,7 +22,7 @@ export function WritingPost(props: WritingPostProps) {
           width: "100%",
           textAlign: "center",
           border: `3px ${hoveredPost ? "dashed" : "solid"} ${
-            isDark ? "#cea2ac" : "#25283d"
+            isDark ? "white" : "black"
           }`,
           marginBottom: "20px",
         }}
