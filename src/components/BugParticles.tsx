@@ -79,6 +79,7 @@ export default function BugParticles() {
         },
         polygon: {
           enable: true,
+          scale: isMobile ? 0.75 : 1,
           inline: {
             arrangement: "equidistant",
           },
