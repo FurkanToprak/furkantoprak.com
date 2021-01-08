@@ -39,7 +39,12 @@ export function WritingPost(props: WritingPostProps) {
         {props.contentType === "md" ? (
           <ReactMarkdown>{props.content}</ReactMarkdown>
         ) : (
-          <iframe title={props.title} src={props.content} width="100%" height="400"></iframe>
+          <iframe
+            title={props.title}
+            src={props.content}
+            width="100%"
+            height="400"
+          ></iframe>
         )}
       </Accordion.Collapse>
     </Accordion>
@@ -58,6 +63,12 @@ const writings: WritingPostProps[] = [
     content:
       "https://drive.google.com/file/d/1ng9NeOj_poo-raQb0E4GOag7ca5_L3rV/preview",
     contentType: "pdf",
+  },
+  {
+    title: "This turned to That and said,",
+    content:
+      "I’ll meet my maker but let me meet yours,\n\nlet me sing him praises and feed him roars!\n\nI am left dry but for you he pours;\n\nwhy is this world not mine but yours?",
+    contentType: "md",
   },
 ];
 
