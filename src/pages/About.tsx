@@ -135,7 +135,7 @@ function About() {
         <br />
         <br />I have lately taken up writing and will try to publish my writings
         on this website. You can visit the{" "}
-        <a href="/writings">
+        <a href="/#/writings">
           <u>writings</u>
         </a>{" "}
         tab for my essays and papers. If you have a project you would like me to
