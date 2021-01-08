@@ -67,7 +67,7 @@ const writings: WritingPostProps[] = [
   {
     title: "This turned to That and said,",
     content:
-      "I’ll meet my maker but let me meet yours,\n\nlet me sing him praises and feed him roars!\n\nI am left dry but for you he pours;\n\nwhy is this world not mine but yours?",
+      "I’ll meet my maker but let me meet yours.\n\nLet me sing him praises and feed him roars!\n\nI am left dry but for you he pours;\n\nWhy is this world not mine but yours?",
     contentType: "md",
   },
 ];
