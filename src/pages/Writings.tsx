@@ -70,6 +70,11 @@ const writings: WritingPostProps[] = [
       "I’ll meet my maker but let me meet yours.\n\nLet me sing him praises and feed him roars!\n\nI am left dry but for you he pours;\n\nWhy is this world not mine but yours?",
     contentType: "md",
   },
+  {
+    title: "The Emperor Wants No Clothes",
+    content: "what most do i desire?\n\nall the nothingness!\n\nfrom things i always tire;\n\nbless my throne of less.\n\n\n\nunder my void power\n\nwhere all substance flees\n\nand meaning will cower\nmy sole law decrees:\n\n\n\nall things shall tire,\n\nand nothing shall bring bliss-\n\ni rule as your sire:\n\nking of nothingness!",
+    contentType: "md",
+  }
 ];
 
 export default function Writings() {
