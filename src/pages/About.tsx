@@ -2,6 +2,7 @@ import { Accordion, Card } from "react-bootstrap";
 import HR from "../components/HR";
 import { useState, useContext } from "react";
 import Theme from "../contexts/Theme";
+import mepng from "../components/Media/me.png";
 
 function EmbedResume() {
   return (
@@ -111,6 +112,10 @@ function ReadingList() {
   );
 }
 
+function MePicture() {
+  return <img height={300} src={mepng} alt="Me, on a hike." />;
+}
+
 function About() {
   const useTheme = useContext(Theme);
   const isDark = useTheme.theme === "dark";
@@ -124,6 +129,15 @@ function About() {
       >
         about
       </h3>
+      <div
+        style={{
+          display: "flex",
+          alignItems: "center",
+          justifyContent: "center",
+        }}
+      >
+        <MePicture />
+      </div>
       <div>
         <h5 style={{ textAlign: "center" }}>what keeps me busy</h5>
         I am an undergraduate student at Texas A&M University who is studying
@@ -170,8 +184,9 @@ function About() {
               style={{
                 width: "100%",
                 textAlign: "center",
-                border: `3px ${hoveredResume ? "dashed" : "solid"} ${isDark ? "white" : "black"}`
-
+                border: `3px ${hoveredResume ? "dashed" : "solid"} ${
+                  isDark ? "white" : "black"
+                }`,
               }}
               onMouseOver={() => {
                 setHoveredResume(true);
