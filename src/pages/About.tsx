@@ -15,101 +15,30 @@ function EmbedResume() {
   );
 }
 
+const books: [string, string][] = [
+  ["Harry Potter and the Sorcerer's Stone", "J. K. Rowling"],
+  ["Evolutionary dynamics", "Martin A. Nowak"],
+  ["Beyond Good and Evil", "Frederich Nietzche"],
+  [
+    "Hands-On Machine Learning with Scikit-Learn & TensorFlow",
+    "Aurelien Geron",
+  ],
+  ["Give People Money", "Annie Lowrey"],
+  ["1984", "George Orwell"],
+  ["Discrete Mathematics and Its Applications", "Kenneth H. Rosen"],
+  ["Maps of Meaning", "Jordan B. Peterson"],
+  ["On The Social Contract", "Jean-Jacques Rousseau"],
+  ["You Are Not So Smart", "David McRaney"],
+  ["The Count of Monte Cristo", "Alexandre Dumas"],
+  ["Night", "Elie Wiesel"],
+  ["Hamlet", "William Shakespeare"],
+  ["Hard Times", "Charles Dickens"],
+  ["The Trial", "Franz Kafka"],
+];
 function ReadingList() {
-  return (
-    <ul>
-      <li>
-        <u>
-          <i>Harry Potter and the Sorcerer's Stone</i>
-        </u>{" "}
-        by J. K. Rowling
-      </li>
-      <li>
-        <u>
-          <i>Evolutionary Dynamics</i>
-        </u>{" "}
-        by Martin A. Nowak
-      </li>
-      <li>
-        <u>
-          <i>Beyond Good and Evil</i>
-        </u>{" "}
-        by Frederich Nietzche
-      </li>
-      <li>
-        <u>
-          <i>Hands-On Machine Learning with Scikit-Learn & TensorFlow</i>
-        </u>{" "}
-        by Aurelien Geron
-      </li>
-      <li>
-        <u>
-          <i>Give People Money</i>
-        </u>{" "}
-        by Annie Lowrey
-      </li>
-      <li>
-        <u>
-          <i>1984</i>
-        </u>{" "}
-        by George Orwell
-      </li>
-      <li>
-        <u>
-          <i>Discrete Mathematics and Its Applications</i>
-        </u>{" "}
-        by Kenneth H. Rosen
-      </li>
-      <li>
-        <u>
-          <i>Maps of Meaning</i>
-        </u>{" "}
-        by Jordan B. Peterson
-      </li>
-      <li>
-        <u>
-          <i>On The Social Contract</i>
-        </u>{" "}
-        by Jean-Jacques Rousseau
-      </li>
-      <li>
-        <u>
-          <i>You Are Not So Smart</i>
-        </u>{" "}
-        by David McRaney
-      </li>
-      <li>
-        <u>
-          <i>A Wrinkle In Time</i>
-        </u>{" "}
-        by Madeleine L'Engle
-      </li>
-      <li>
-        <u>
-          <i>The Count of Monte Cristo</i>
-        </u>{" "}
-        by Alexandre Dumas
-      </li>
-      <li>
-        <u>
-          <i>Night</i>
-        </u>{" "}
-        by Elie Wiesel
-      </li>
-      <li>
-        <u>
-          <i>Hamlet</i>
-        </u>{" "}
-        by William Shakespeare
-      </li>
-      <li>
-        <u>
-          <i>Hard Times</i>
-        </u>{" "}
-        by Charles Dickens
-      </li>
-    </ul>
-  );
+  return <div>
+    <ul>{books.map((book) => <li><i><u>{book[0]}</u></i> by {book[1]}</li>)}</ul>
+   </div>;
 }
 
 function MePicture() {
