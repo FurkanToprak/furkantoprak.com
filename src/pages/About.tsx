@@ -16,6 +16,7 @@ function EmbedResume() {
 }
 
 const books: [string, string][] = [
+  ["Man's Search for Meaning", "Viktor Frankl"],
   ["Harry Potter and the Sorcerer's Stone", "J. K. Rowling"],
   ["Evolutionary dynamics", "Martin A. Nowak"],
   ["Beyond Good and Evil", "Frederich Nietzche"],
@@ -31,14 +32,27 @@ const books: [string, string][] = [
   ["You Are Not So Smart", "David McRaney"],
   ["The Count of Monte Cristo", "Alexandre Dumas"],
   ["Night", "Elie Wiesel"],
+  ["The Federalist Papers", "Plubius (Alexander Hamilton, John Jay, and James Madison)"],
   ["Hamlet", "William Shakespeare"],
   ["Hard Times", "Charles Dickens"],
   ["The Trial", "Franz Kafka"],
+  ["Pimp", "Iceberg Slim"],
 ];
 function ReadingList() {
-  return <div>
-    <ul>{books.map((book) => <li><i><u>{book[0]}</u></i> by {book[1]}</li>)}</ul>
-   </div>;
+  return (
+    <div>
+      <ul>
+        {books.map((book) => (
+          <li>
+            <i>
+              <u>{book[0]}</u>
+            </i>{" "}
+            by {book[1]}
+          </li>
+        ))}
+      </ul>
+    </div>
+  );
 }
 
 function MePicture() {
