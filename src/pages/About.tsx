@@ -16,6 +16,7 @@ function EmbedResume() {
 }
 
 const books: [string, string][] = [
+  ["The Gulag Archipelago", "Aleksandr Solzhenitsyn"],
   ["Man's Search for Meaning", "Viktor Frankl"],
   ["Harry Potter and the Sorcerer's Stone", "J. K. Rowling"],
   ["Evolutionary dynamics", "Martin A. Nowak"],
@@ -32,11 +33,15 @@ const books: [string, string][] = [
   ["You Are Not So Smart", "David McRaney"],
   ["The Count of Monte Cristo", "Alexandre Dumas"],
   ["Night", "Elie Wiesel"],
-  ["The Federalist Papers", "Plubius (Alexander Hamilton, John Jay, and James Madison)"],
+  [
+    "The Federalist Papers",
+    "Plubius (Alexander Hamilton, John Jay, and James Madison)",
+  ],
   ["Hamlet", "William Shakespeare"],
   ["Hard Times", "Charles Dickens"],
   ["The Trial", "Franz Kafka"],
   ["Pimp", "Iceberg Slim"],
+  ["The Prince", "Niccolo Machiavelli"],
 ];
 function ReadingList() {
   return (
