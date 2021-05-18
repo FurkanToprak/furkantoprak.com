@@ -15,6 +15,17 @@ function EmbedResume() {
   );
 }
 
+function EmbedCV() {
+  return (
+    <iframe
+      title="my CV"
+      src="https://drive.google.com/file/d/1iqO64v-ssZLnBzaQv0_-rXM0wmxlrHoD/preview"
+      width="100%"
+      height={300}
+    ></iframe>
+  );
+}
+
 const books: [string, string][] = [
   ["The Gulag Archipelago", "Aleksandr Solzhenitsyn"],
   ["Man's Search for Meaning", "Viktor Frankl"],
@@ -68,6 +79,7 @@ function About() {
   const useTheme = useContext(Theme);
   const isDark = useTheme.theme === "dark";
   const [hoveredResume, setHoveredResume] = useState(false);
+  const [hoveredCV, setHoveredCV] = useState(false);
   return (
     <div>
       <h3
@@ -148,6 +160,34 @@ function About() {
             <Accordion.Collapse eventKey="0">
               <Card.Body>
                 <EmbedResume />
+              </Card.Body>
+            </Accordion.Collapse>
+          </Accordion>
+        </div>
+        <div style={{ marginTop: 10 }}>
+          <Accordion>
+            <Accordion.Toggle
+              eventKey="0"
+              as={Card.Header}
+              style={{
+                width: "100%",
+                textAlign: "center",
+                border: `3px ${hoveredCV ? "dashed" : "solid"} ${
+                  isDark ? "white" : "black"
+                }`,
+              }}
+              onMouseOver={() => {
+                setHoveredCV(true);
+              }}
+              onMouseLeave={() => {
+                setHoveredCV(false);
+              }}
+            >
+              <u>CV</u>
+            </Accordion.Toggle>
+            <Accordion.Collapse eventKey="0">
+              <Card.Body>
+                <EmbedCV />
               </Card.Body>
             </Accordion.Collapse>
           </Accordion>
