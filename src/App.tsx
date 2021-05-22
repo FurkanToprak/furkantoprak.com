@@ -5,9 +5,10 @@ import Footer from "./components/Footer";
 import ThemeContext from "./contexts/Theme";
 import Home from "./pages/Home";
 import About from "./pages/About";
-import Writings from "./pages/Writings";
+import Writings, { writings, WritingPostProps } from "./pages/Writings";
 import Projects from "./pages/Projects";
 import Contact from "./pages/Contact";
+import Writing from "./pages/Writing";
 
 function App() {
   const defaultTheme = localStorage.getItem("theme") || "light";
@@ -31,7 +32,7 @@ function App() {
       }}
     >
       <ThemeContext.Provider value={{ theme, toggleTheme }}>
-        <div>
+        <div style={{ display: "flex", flexDirection: "column" }}>
           <Nav />
           <div
             style={{
@@ -58,6 +59,13 @@ function App() {
                 <Route exact path={"/writings"}>
                   <Writings />
                 </Route>
+                {writings.map((writing: WritingPostProps) => {
+                  return (
+                    <Route exact path={`/writings/${writing.urlEndpoint}`}>
+                      <Writing {...writing} />
+                    </Route>
+                  );
+                })}
               </Switch>
             </Router>
           </div>
