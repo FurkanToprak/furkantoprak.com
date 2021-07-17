@@ -29,7 +29,7 @@ const skillsAndQualificationDocuments: {
   },
   {
     title: "Certified Secure Software Engineer",
-    link: "https://drive.google.com/file/d/1HEKpnp2kc-UNbFpOQW4nLV7h9T_Wb5_f/view?usp=sharing",
+    link: "https://drive.google.com/file/d/1HEKpnp2kc-UNbFpOQW4nLV7h9T_Wb5_f/preview",
   },
 ];
 
