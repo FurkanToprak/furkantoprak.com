@@ -4,55 +4,68 @@ import { useState, useContext } from "react";
 import Theme from "../contexts/Theme";
 import mepng from "../components/Media/me.png";
 
-function EmbedResume() {
+function EmbedDocument(props: { title: string; src: string }) {
   return (
     <iframe
-      title="my resume"
-      src="https://drive.google.com/file/d/1rAkabK41Bc8SnQ_r8izUcFF3LqfXoM9V/preview"
+      title={props.title}
+      src={props.src}
       width="100%"
       height={300}
     ></iframe>
   );
 }
 
-function EmbedCV() {
-  return (
-    <iframe
-      title="my CV"
-      src="https://drive.google.com/file/d/1iqO64v-ssZLnBzaQv0_-rXM0wmxlrHoD/preview"
-      width="100%"
-      height={300}
-    ></iframe>
-  );
-}
+const skillsAndQualificationDocuments: {
+  link: string;
+  title: string;
+}[] = [
+  {
+    title: "my CV",
+    link: "https://drive.google.com/file/d/1iqO64v-ssZLnBzaQv0_-rXM0wmxlrHoD/preview",
+  },
+  {
+    title: "my resume",
+    link: "https://drive.google.com/file/d/1rAkabK41Bc8SnQ_r8izUcFF3LqfXoM9V/preview",
+  },
+  {
+    title: "Certified Secure Software Engineer",
+    link: "https://drive.google.com/file/d/1HEKpnp2kc-UNbFpOQW4nLV7h9T_Wb5_f/view?usp=sharing",
+  },
+];
 
-const books: [string, string][] = [
-  ["The Gulag Archipelago", "Aleksandr Solzhenitsyn"],
-  ["Man's Search for Meaning", "Viktor Frankl"],
-  ["Harry Potter and the Sorcerer's Stone", "J. K. Rowling"],
-  ["Evolutionary dynamics", "Martin A. Nowak"],
-  ["Beyond Good and Evil", "Frederich Nietzche"],
-  [
-    "Hands-On Machine Learning with Scikit-Learn & TensorFlow",
-    "Aurelien Geron",
-  ],
-  ["Give People Money", "Annie Lowrey"],
-  ["1984", "George Orwell"],
-  ["Discrete Mathematics and Its Applications", "Kenneth H. Rosen"],
-  ["Maps of Meaning", "Jordan B. Peterson"],
-  ["On The Social Contract", "Jean-Jacques Rousseau"],
-  ["You Are Not So Smart", "David McRaney"],
-  ["The Count of Monte Cristo", "Alexandre Dumas"],
-  ["Night", "Elie Wiesel"],
-  [
-    "The Federalist Papers",
-    "Plubius (Alexander Hamilton, John Jay, and James Madison)",
-  ],
-  ["Hamlet", "William Shakespeare"],
-  ["Hard Times", "Charles Dickens"],
-  ["The Trial", "Franz Kafka"],
-  ["Pimp", "Iceberg Slim"],
-  ["The Prince", "Niccolo Machiavelli"],
+const books: {
+  title: string;
+  author: string;
+}[] = [
+  { title: "The Gulag Archipelago", author: "Aleksandr Solzhenitsyn" },
+  { title: "Man's Search for Meaning", author: "Viktor Frankl" },
+  { title: "Harry Potter and the Sorcerer's Stone", author: "J. K. Rowling" },
+  { title: "Evolutionary dynamics", author: "Martin A. Nowak" },
+  { title: "Beyond Good and Evil", author: "Frederich Nietzche" },
+  {
+    title: "Hands-On Machine Learning with Scikit-Learn & TensorFlow",
+    author: "Aurelien Geron",
+  },
+  { title: "Give People Money", author: "Annie Lowrey" },
+  { title: "1984", author: "George Orwell" },
+  {
+    title: "Discrete Mathematics and Its Applications",
+    author: "Kenneth H. Rosen",
+  },
+  { title: "Maps of Meaning", author: "Jordan B. Peterson" },
+  { title: "On The Social Contract", author: "Jean-Jacques Rousseau" },
+  { title: "You Are Not So Smart", author: "David McRaney" },
+  { title: "The Count of Monte Cristo", author: "Alexandre Dumas" },
+  { title: "Night", author: "Elie Wiesel" },
+  {
+    title: "The Federalist Papers",
+    author: "Plubius (Alexander Hamilton, John Jay, and James Madison)",
+  },
+  { title: "Hamlet", author: "William Shakespeare" },
+  { title: "Hard Times", author: "Charles Dickens" },
+  { title: "The Trial", author: "Franz Kafka" },
+  { title: "Pimp", author: "Iceberg Slim" },
+  { title: "The Prince", author: "Niccolo Machiavelli" },
 ];
 function ReadingList() {
   return (
@@ -61,9 +74,9 @@ function ReadingList() {
         {books.map((book) => (
           <li>
             <i>
-              <u>{book[0]}</u>
+              <u>{book.title}</u>
             </i>{" "}
-            by {book[1]}
+            by {book.author}
           </li>
         ))}
       </ul>
@@ -77,9 +90,8 @@ function MePicture() {
 
 function About() {
   const useTheme = useContext(Theme);
+  const [hoveredDocument, setHoveredDocument] = useState(-1);
   const isDark = useTheme.theme === "dark";
-  const [hoveredResume, setHoveredResume] = useState(false);
-  const [hoveredCV, setHoveredCV] = useState(false);
   return (
     <div>
       <h3
@@ -144,60 +156,34 @@ function About() {
       <div>
         <h5 style={{ textAlign: "center" }}>skills & qualifications</h5>
         <div>
-          <Accordion>
-            <Accordion.Toggle
-              eventKey="0"
-              as={Card.Header}
-              style={{
-                width: "100%",
-                textAlign: "center",
-                border: `3px ${hoveredResume ? "dashed" : "solid"} ${
-                  isDark ? "white" : "black"
-                }`,
-              }}
-              onMouseOver={() => {
-                setHoveredResume(true);
-              }}
-              onMouseLeave={() => {
-                setHoveredResume(false);
-              }}
-            >
-              <u>resume</u>
-            </Accordion.Toggle>
-            <Accordion.Collapse eventKey="0">
-              <Card.Body>
-                <EmbedResume />
-              </Card.Body>
-            </Accordion.Collapse>
-          </Accordion>
-        </div>
-        <div style={{ marginTop: 10 }}>
-          <Accordion>
-            <Accordion.Toggle
-              eventKey="0"
-              as={Card.Header}
-              style={{
-                width: "100%",
-                textAlign: "center",
-                border: `3px ${hoveredCV ? "dashed" : "solid"} ${
-                  isDark ? "white" : "black"
-                }`,
-              }}
-              onMouseOver={() => {
-                setHoveredCV(true);
-              }}
-              onMouseLeave={() => {
-                setHoveredCV(false);
-              }}
-            >
-              <u>CV</u>
-            </Accordion.Toggle>
-            <Accordion.Collapse eventKey="0">
-              <Card.Body>
-                <EmbedCV />
-              </Card.Body>
-            </Accordion.Collapse>
-          </Accordion>
+          {skillsAndQualificationDocuments.map((document, indexDocument) => {
+            return (
+              <Accordion style={{ paddingTop: 10, paddingBottom: 10 }}>
+                <Accordion.Toggle
+                  eventKey={`${indexDocument}`}
+                  as={Card.Header}
+                  style={{
+                    width: "100%",
+                    textAlign: "center",
+                    border: `3px ${
+                      hoveredDocument === indexDocument ? "dashed" : "solid"
+                    } ${isDark ? "white" : "black"}`,
+                  }}
+                  onMouseOver={() => {
+                    setHoveredDocument(indexDocument);
+                  }}
+                  onMouseLeave={() => {
+                    setHoveredDocument(-1);
+                  }}
+                >
+                  <u>{document.title}</u>
+                </Accordion.Toggle>
+                <Accordion.Collapse eventKey={`${indexDocument}`}>
+                  <EmbedDocument title={document.title} src={document.link} />
+                </Accordion.Collapse>
+              </Accordion>
+            );
+          })}
         </div>
       </div>
       <HR />
