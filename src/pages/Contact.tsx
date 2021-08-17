@@ -1,4 +1,4 @@
-import React, { useContext, useState } from "react";
+import { useContext, useState } from "react";
 import MailIcon from "../components/Icons/MailIcon";
 import GithubIcon from "../components/Icons/GithubIcon";
 import PhoneIcon from "../components/Icons/PhoneIcon";

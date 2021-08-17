@@ -1,4 +1,3 @@
-import React from "react";
 import HR from "../components/HR";
 
 export interface WritingPostProps {
@@ -9,6 +8,13 @@ export interface WritingPostProps {
 }
 
 export const writings: WritingPostProps[] = [
+  {
+    title: "a fool in a fire",
+    content:
+      "The holy man knelt with his son and his wife, who were mere shadows of himself rather than people, and they worshipped the fire. He sprinkled sage slowly into a yellow wax candle while gazing into the lit fireplace by the entrance of my uncle’s house; it was as if the flame contained the entirety of the universe in it and would never die. He did this constantly, only pausing to sprinkle sage on the shoulders of his family, kiss their lips, smile, and weep. He was to worship there to bless the house, until he or the flame died. He had been there for two days. His loyal family's legs were bruised from kneeling before the hearth, yet they remained trenched by the heat with their eyes fixated on the fire and their knees anchored to the ground.\n\nHe had been commissioned there by my rich uncle, who was once the poorest man alive. My uncle had prepared to give him a fortune, but he rather wouldn’t, he said. The only commission he had asked for was the candle. To my uncle, this was the real blessing. Even more oddly, no one had provided even a single piece of kindling or wood to this man, who had come empty-handed, so how did he make the fire? My uncle did not care, of course. My uncle and I walked past them as we left the house and he smiled slyly, as he would when he traded in the market.\n\nThen came forth my sisters who I had nursed together with- those I had for so long neglected and forgotten. We embraced and we cried. They cried that I forgot them and I cried that I forgot them. A few steps behind them stood their keeper; she had lost one of her eyes and so her eyelid remained shut. The other eye contained lightning and had seen all the misery and the fewest joy one lifetime could bring. Their keeper came to me and said, we’re real, you know! And then she said a word, or less than four, that struck my heart and escaped my mind. Air escaped my lungs and I found misery and peace. My sisters had left. Disappeared into thin air, or perhaps crawled into the earth? Does it matter, thought I, if all things leave? My uncle left indignantly, his face red, and I followed with my head hanging.\n\nWe walked back into my uncle’s house. Lightning lingered on my mind. My thoughts were interrupted by my uncle’s bellowing, “Just throw it all in the fireplace, fool!” He smacked the candle out of the holy man’s hand and thrust the bag of sage into the fireplace. Smoke filled the room. The holy man calmly leaned into the fire and collected the sage with his hand. Neither his hand or the sage was burned yet he cried wistfully. He continued his ritual.\n\nMy uncle beat the man every day and ordered him to leave, but he would not. They never replenished their store of sage, or stood up even for a second. The candle never lost its flame, nor did the wax dwindle. He stopped feeding them, but they never left the fire. Never did they eat; instead, the flames nourished them. They remained there for at least 2 more years. I do not know what happened to them after the incident.\n\nOne day, my uncle woke up weeping. He had been drunk for weeks. He softly uttered some old sin of his and dove into the fire. His shrieks filled the air but smoke did not. I left the house and the town. I now sit by this tree, watching lightning.\n",
+    contentType: "md",
+    urlEndpoint: "fool",
+  },
   {
     title: "A trimethoprim derivative impedes antibiotic resistance evolution",
     content:
