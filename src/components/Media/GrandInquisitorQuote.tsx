@@ -1,2 +1,0 @@
-export const quote =
-  'They will find us and cry to us, "Feed us, for those who have promised us fire from heaven haven\'t given it!" And then we shall finish building their tower, for he finishes the building who feeds them. And we alone shall feed them in Thy name, declaring falsely that it is in Thy name. Oh, never, never can they feed themselves without us! No science will give them bread so long as they remain free.';

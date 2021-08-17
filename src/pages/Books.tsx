@@ -52,7 +52,7 @@ function ReadingList() {
 
 export default function Books() {
     return <div>
-        <h5 style={{ textAlign: "center" }}>books that have changed my life</h5>
+        <h3 style={{ textAlign: "center" }}>books that have changed my life</h3>
         <ReadingList />
     </div>
 }
