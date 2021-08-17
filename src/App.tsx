@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import { HashRouter as Router, Switch, Route } from "react-router-dom";
 import Nav from "./components/Nav";
 import Footer from "./components/Footer";
@@ -9,6 +9,8 @@ import Writings, { writings, WritingPostProps } from "./pages/Writings";
 import Projects from "./pages/Projects";
 import Contact from "./pages/Contact";
 import Writing from "./pages/Writing";
+import Books from "./pages/Books";
+import Etc from "./pages/Etc";
 
 function App() {
   const defaultTheme = localStorage.getItem("theme") || "light";
@@ -58,6 +60,12 @@ function App() {
                 </Route>
                 <Route exact path={"/writings"}>
                   <Writings />
+                </Route>
+                <Route exact path={"/books"}>
+                  <Books/>
+                </Route>
+                <Route exact path={"/etc"}>
+                  <Etc/>
                 </Route>
                 {writings.map((writing: WritingPostProps) => {
                   return (
