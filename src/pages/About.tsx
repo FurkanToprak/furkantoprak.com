@@ -78,28 +78,26 @@ function About() {
       </div>
       <HR />
       <div>
-        <h5 style={{ textAlign: "center" }}>research & work</h5>I am a coauthor
+        <h5 style={{ textAlign: "center" }}>research & work</h5>
+        <br />
+        <br />
+        This year, I am performing research on Explainability of Bias in Recommender Systems- under
+        James Caverlee at Texas A&M University. Previously, I have worked in a number of labs, primarily working with ML,
+        neuroevolution, data analysis, bacteria resistance, and viral genomics.
+        <br />
+        <br />
+        In the past, I have worked at Capital One as a Software Engineer Intern,
+        where I developed highly scalable machine learning microservices that analyzed financial contracts.
+        My work at Capital One is being used internally and in production.
+        Additionally, I have worked at SynchroGrid, developing software tools for
+        Electrical Engineers to protect power grids. My code has been shipped to
+        some of the largest power companies in the nation.
+        I am a coauthor
         in a publication! Head over to{" "}
         <u>
           <a href="/#/writings">writings</a>
         </u>{" "}
         to read it.
-        <br />
-        <br />
-        I have worked in a number of labs, primarily working with AI, robots,
-        neuroevolution, data analysis, bacteria resistance, and viral genomics.
-        Next year, I will conduct research bias in Recommender Systems under
-        James Caverlee at Texas A&M University.
-        <br />
-        <br />
-        This summer I will be working as an Intern Software Engineer at Capital
-        One, where I hope to develop excellent software with some of the
-        brightest in finance technology.
-        <br />
-        <br />
-        In the past I have worked at SynchroGrid, developing software tools for
-        Electrical Engineers to protect power grids. My code has been shipped to
-        some of the largest power companies in the nation.
       </div>
       <HR />
       <div>
