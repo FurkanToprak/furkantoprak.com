@@ -10,7 +10,7 @@ const routes = [
   { to: "/#/writings", label: "writings" },
   { to: "/#/projects", label: "projects" },
   { to: "/#/contact", label: "contact" },
-  { to: "/#/books", label: "books" },
+  { to: "/#/books", label: "books/papers" },
   { to: "/#/etc", label: "etc" },
 ];
 
