@@ -34,7 +34,7 @@ const books: ReadingSchema[] = [
     { title: "The Trial", author: "Franz Kafka" },
     { title: "Pimp", author: "Iceberg Slim" },
     { title: "The Prince", author: "Niccolo Machiavelli" },
-    { title: "Crime and Punishment", author: "Fyodor Dostoevsky"}
+    { title: "Crime and Punishment", author: "Fyodor Dostoevsky" }
 ];
 
 const papers: ReadingSchema[] = [
@@ -44,8 +44,15 @@ const papers: ReadingSchema[] = [
     { title: "Random Search for Hyper-Parameter Optimization", author: "Bergstra & Bengio" },
     { title: "Varying environments can speed up evolution", author: "Alon et al" },
     { title: "Transparent, Scrutable and Explainable User Models for Personalized Recommendation", author: "Arakelyan et al", },
-    { title: "The Impact of Legalized Abortion on Crime", author: "Donohue & Levitt"},
-    { title: "Building a morbidostat: an automated continuous-culture device for studying bacterial drug resistance under dynamically sustained drug inhibition", author: "Toprak et al"}
+    { title: "The Impact of Legalized Abortion on Crime", author: "Donohue & Levitt" },
+    { title: "Building a morbidostat: an automated continuous-culture device for studying bacterial drug resistance under dynamically sustained drug inhibition", author: "Toprak et al" },
+    { title: "Theoretical Modeling of the Iterative Properties of User Discovery in a Collaborative Filtering Recommender System", author: "Nasraoui et al" },
+    { title: "Evaluation of Cohort Algorithms for the FLoC API", author: "Google Research & Ads" },
+    { title: "Deconstructing the Filter Bubble: User Decision-Making and Recommender Systems", author: "Sikdar et al" },
+    { title: "The Connection Between Popularity Bias, Calibration, and Fairness in Recommendation", author: "Mobasher et al" },
+    { title: "Thoughts on Government", author: "John Adams" },
+    { title: "All The Cool Kids, How Do They Fit In?: Popularity and Demographic Biases in Recommender Evaluation and Effectiveness", author: "Pera et al" },
+    { title: "Multisided Fairness for Recommendation", author: "Robin Burke" }
 ];
 
 function ReadingList(props: { readingList: ReadingSchema[] }) {
