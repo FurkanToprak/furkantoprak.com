@@ -5,12 +5,9 @@ import Footer from "./components/Footer";
 import ThemeContext from "./contexts/Theme";
 import Home from "./pages/Home";
 import About from "./pages/About";
-import Writings, { writings, WritingPostProps } from "./pages/Writings";
 import Projects from "./pages/Projects";
 import Contact from "./pages/Contact";
-import Writing from "./pages/Writing";
 import Books from "./pages/Books";
-import Etc from "./pages/Etc";
 
 function App() {
   const defaultTheme = localStorage.getItem("theme") || "light";
@@ -58,22 +55,9 @@ function App() {
                 <Route exact path={"/contact"}>
                   <Contact />
                 </Route>
-                <Route exact path={"/writings"}>
-                  <Writings />
-                </Route>
                 <Route exact path={"/books"}>
                   <Books/>
                 </Route>
-                <Route exact path={"/etc"}>
-                  <Etc/>
-                </Route>
-                {writings.map((writing: WritingPostProps) => {
-                  return (
-                    <Route exact path={`/writings/${writing.urlEndpoint}`}>
-                      <Writing {...writing} />
-                    </Route>
-                  );
-                })}
               </Switch>
             </Router>
           </div>
