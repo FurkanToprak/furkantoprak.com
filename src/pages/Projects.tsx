@@ -11,6 +11,7 @@ import SearchIcon from "../components/Icons/SearchIcon";
 import VectorIcon from "../components/Icons/VectorIcon";
 import ChatIcon from "../components/Icons/ChatIcon";
 import SocialIcon from "../components/Icons/SocialIcon";
+import YouTubeIcon from "../components/Icons/YouTubeIcon";
 
 interface TimelineElementProps {
   isDark?: boolean;
@@ -43,6 +44,35 @@ function TimelineElement(props: TimelineElementProps) {
 }
 
 const projects: TimelineElementProps[] = [
+  {
+    child: (
+      <div>
+        <h3>Lost Inside Reddit</h3>
+        <ul>
+          <li>
+            A 100% automated YouTube channel that posts the hottest content from Reddit.
+          </li>
+          <li>
+            Built with in Python, Reddit API, and YouTube Data API.
+          </li>
+          <li>
+            I have not made this open source (yet), as YouTube is cut-throat and I need a competitive edge {"<3"}.
+          </li>
+          <li>
+            <a
+              href="https://www.youtube.com/channel/UCHqMXbXi5UILOqH4EE4RNwQ"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <u>Check out the YouTube channel.</u>
+            </a>
+          </li>
+        </ul>
+      </div>
+    ),
+    icon: <YouTubeIcon />,
+    date: "December 2021",
+  },
   {
     child: (
       <div>
