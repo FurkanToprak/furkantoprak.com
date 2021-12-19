@@ -58,6 +58,15 @@ const projects: TimelineElementProps[] = [
         <li>
           Fast and reactive search/sort functions.
         </li>
+        <li>
+            <a
+              href="https://github.com/FurkanToprak/history-plus-plus-chrome"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <u>Check out the extension.</u>
+            </a>
+          </li>
       </ul>
     </div>,
     icon: <HistoryIcon />,
