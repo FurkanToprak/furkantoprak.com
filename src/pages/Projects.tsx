@@ -12,6 +12,7 @@ import VectorIcon from "../components/Icons/VectorIcon";
 import ChatIcon from "../components/Icons/ChatIcon";
 import SocialIcon from "../components/Icons/SocialIcon";
 import YouTubeIcon from "../components/Icons/YouTubeIcon";
+import HistoryIcon from "../components/Icons/HistoryIcon";
 
 interface TimelineElementProps {
   isDark?: boolean;
@@ -44,6 +45,25 @@ function TimelineElement(props: TimelineElementProps) {
 }
 
 const projects: TimelineElementProps[] = [
+  {
+    child: <div>
+      <h3>History++</h3>
+      <ul>
+        <li>
+          A secure open-source Chrome Extension that helps developers find their most frequent resources.
+        </li>
+        <li>
+          Sort by visit count, last visit, and title- right from the corner of your browser!
+        </li>
+        <li>
+          Fast and reactive search/sort functions.
+        </li>
+      </ul>
+    </div>,
+    icon: <HistoryIcon />,
+    date: "December 2021"
+  },
+
   {
     child: (
       <div>
