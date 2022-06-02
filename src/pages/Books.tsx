@@ -38,6 +38,7 @@ const books: ReadingSchema[] = [
 ];
 
 const papers: ReadingSchema[] = [
+    { title: "Reward and Punishment", author: "Sigmund et al" },
     { title: "\"Why Should I Trust You?\" Explaining the Predictions of Any Classifier", author: "Ribeiro et al" },
     { title: "Towards Explaining Recommendations Through Local Surrogate Models", author: "Nobrega & Marinho" },
     { title: "Evolving Neural Networks through Augmenting Topologies", author: "Stanley & Miikkulainen" },
@@ -74,7 +75,7 @@ function ReadingList(props: { readingList: ReadingSchema[] }) {
 
 export default function Books() {
     return <div>
-        <h3 style={{ textAlign: "center" }}>books that have changed my life</h3>
+        <h3 style={{ textAlign: "center" }}>good books</h3>
         <ReadingList readingList={books} />
         <h3 style={{ textAlign: "center" }}>cool papers</h3>
         <ReadingList readingList={papers} />
