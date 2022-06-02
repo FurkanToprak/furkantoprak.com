@@ -47,6 +47,33 @@ function TimelineElement(props: TimelineElementProps) {
 const projects: TimelineElementProps[] = [
   {
     child: <div>
+      <h3>inflation.ninja</h3>
+      <ul>
+      <li>
+          A website that educates investors on how to beat inflation.
+        </li>
+        <li>
+          Helps compare stocks of your choice to the consumer price index.
+        </li>
+        <li>
+          Built in Angular.js + Typescript.
+        </li>
+        <li>
+            <a
+              href="https://www.inflation.ninja"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <u>Check out the website.</u>
+            </a>
+          </li>
+      </ul>
+    </div>,
+    icon: <MoneyIcon />,
+    date: "June 2022"
+  },
+  {
+    child: <div>
       <h3>History++</h3>
       <ul>
         <li>
