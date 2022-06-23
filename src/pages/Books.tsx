@@ -7,7 +7,6 @@ const books: ReadingSchema[] = [
     { title: "The Gulag Archipelago", author: "Aleksandr Solzhenitsyn" },
     { title: "Man's Search for Meaning", author: "Viktor Frankl" },
     { title: "The Brothers Karamazov", author: "Fyodor Dostoevsky" },
-    { title: "Harry Potter and the Sorcerer's Stone", author: "J. K. Rowling" },
     { title: "Evolutionary dynamics", author: "Martin A. Nowak" },
     { title: "Beyond Good and Evil", author: "Frederich Nietzche" },
     {
@@ -34,7 +33,8 @@ const books: ReadingSchema[] = [
     { title: "The Trial", author: "Franz Kafka" },
     { title: "Pimp", author: "Iceberg Slim" },
     { title: "The Prince", author: "Niccolo Machiavelli" },
-    { title: "Crime and Punishment", author: "Fyodor Dostoevsky" }
+    { title: "Crime and Punishment", author: "Fyodor Dostoevsky" },
+    { title: "Atlas Shrugged", author: "Ayn Rand"}
 ];
 
 const papers: ReadingSchema[] = [

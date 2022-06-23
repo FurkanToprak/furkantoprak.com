@@ -56,7 +56,7 @@ const projects: TimelineElementProps[] = [
           Helps compare stocks of your choice to the consumer price index.
         </li>
         <li>
-          Built in Angular.js + Typescript.
+          Built in Angular.js, Flask, AWS Lightsail, AWS Amplify, Typescript, and SASS.
         </li>
         <li>
             <a
@@ -64,7 +64,21 @@ const projects: TimelineElementProps[] = [
               target="_blank"
               rel="noreferrer"
             >
-              <u>Check out the website.</u>
+              <u>Check out the website</u>
+            </a>,
+            <a
+              href="https://github.com/FurkanToprak/inflation.ninja"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <u> the frontend code</u>
+            </a>, or
+            <a
+              href="https://github.com/FurkanToprak/inflation.ninja-backend"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <u> the backend code.</u>
             </a>
           </li>
       </ul>
