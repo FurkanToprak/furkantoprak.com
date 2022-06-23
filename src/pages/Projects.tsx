@@ -216,7 +216,7 @@ const projects: TimelineElementProps[] = [
       </div>
     ),
     icon: <ChatIcon />,
-    date: "April 2020 - Present",
+    date: "April 2020",
   },
   {
     child: (
@@ -252,7 +252,7 @@ const projects: TimelineElementProps[] = [
       </div>
     ),
     icon: <VectorIcon />,
-    date: "August 2020 - Present",
+    date: "August 2020",
   },
   {
     child: (
@@ -287,7 +287,7 @@ const projects: TimelineElementProps[] = [
       </div>
     ),
     icon: <SearchIcon />,
-    date: "August 2020 - Present",
+    date: "August 2020",
   },
   {
     child: (
@@ -316,7 +316,7 @@ const projects: TimelineElementProps[] = [
       </div>
     ),
     icon: <DropIcon />,
-    date: "January 2019 - Present",
+    date: "January 2019",
   },
   {
     child: (
