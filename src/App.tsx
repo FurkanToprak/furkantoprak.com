@@ -5,7 +5,6 @@ import Footer from "./components/Footer";
 import ThemeContext from "./contexts/Theme";
 import About from "./pages/About";
 import Projects from "./pages/Projects";
-import Contact from "./pages/Contact";
 import Books from "./pages/Books";
 
 function App() {
@@ -47,9 +46,6 @@ function App() {
                 </Route>
                 <Route exact path={"/projects"}>
                   <Projects />
-                </Route>
-                <Route exact path={"/contact"}>
-                  <Contact />
                 </Route>
                 <Route exact path={"/books"}>
                   <Books/>

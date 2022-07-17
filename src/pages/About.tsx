@@ -55,6 +55,10 @@ function About() {
       >
         <MePicture />
       </div>
+      <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center'}}>
+        <u><a href="mailto:furkancemaltoprak@gmail.com">furkancemaltoprak@gmail.com</a></u>
+        <u><a href="https://www.github.com/FurkanToprak">github.com/FurkanToprak</a></u>
+      </div>
       <HR />
       <div>
         <h5 style={{ textAlign: "center" }}>skills & qualifications</h5>
