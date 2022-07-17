@@ -28,15 +28,7 @@ export default function Footer() {
           setHovering(false);
         }}
       >
-        <UpIcon />
-      </span>
-      <span>
-        Made with <HeartIcon /> & React
-      </span>
-      <span>
-        <a href="https://www.paypal.me/FurkanToprak" target="_blank" rel="noreferrer">
-          Buy my next <BookIcon />?
-        </a>
+        <UpIcon/>
       </span>
     </footer>
   );
