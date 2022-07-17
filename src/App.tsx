@@ -3,7 +3,6 @@ import { HashRouter as Router, Switch, Route } from "react-router-dom";
 import Nav from "./components/Nav";
 import Footer from "./components/Footer";
 import ThemeContext from "./contexts/Theme";
-import Home from "./pages/Home";
 import About from "./pages/About";
 import Projects from "./pages/Projects";
 import Contact from "./pages/Contact";
@@ -44,9 +43,6 @@ function App() {
             <Router>
               <Switch>
                 <Route exact path={"/"}>
-                  <Home />
-                </Route>
-                <Route exact path={"/about"}>
                   <About />
                 </Route>
                 <Route exact path={"/projects"}>

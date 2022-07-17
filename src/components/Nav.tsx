@@ -5,8 +5,7 @@ import ThemeContext from "../contexts/Theme";
 import CodeIcon from "./Icons/CodeIcon";
 
 const routes = [
-  { to: "/", label: "home" },
-  { to: "/#/about", label: "about" },
+  { to: "/", label: "about" },
   { to: "/#/projects", label: "projects" },
   { to: "/#/contact", label: "contact" },
   { to: "/#/books", label: "books/papers" },

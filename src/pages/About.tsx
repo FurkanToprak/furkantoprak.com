@@ -20,16 +20,12 @@ const skillsAndQualificationDocuments: {
   title: string;
 }[] = [
     {
-      title: "my CV",
+      title: "CV",
       link: "https://drive.google.com/file/d/1iqO64v-ssZLnBzaQv0_-rXM0wmxlrHoD/preview",
     },
     {
-      title: "my resume",
+      title: "resume",
       link: "https://drive.google.com/file/d/1rAkabK41Bc8SnQ_r8izUcFF3LqfXoM9V/preview",
-    },
-    {
-      title: "Certified Secure Software Engineer",
-      link: "https://drive.google.com/file/d/1HEKpnp2kc-UNbFpOQW4nLV7h9T_Wb5_f/preview",
     },
   ];
 
