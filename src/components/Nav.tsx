@@ -8,6 +8,7 @@ const routes = [
   { to: "/", label: "about" },
   { to: "/#/projects", label: "projects" },
   { to: "/#/books", label: "books/papers" },
+  { to: "/#/goals", label: "goals" },
 ];
 
 const NavComponent = () => {

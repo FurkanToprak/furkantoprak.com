@@ -61,6 +61,17 @@ function About() {
       </div>
       <HR />
       <div>
+      <h5 style={{ textAlign: "center" }}>about me</h5>
+      <p>
+        I'm Furkan Toprak. I currently work at YouTube and most of my work is in C++ and Typescript.
+        My passions are mathematics, computer science, literature, philosophy, neuroscience, game theory, value investing, and chess.
+        My areas of competence include machine learning, full stack development, mobile development, data engineering, geospatial calculations, and robotics.
+      </p>
+      <p>
+        My ambitions in life are to fix the plastic problem and to make a neural search engine. More on that <u><a href="/#/goals">here</a></u>.
+      </p>
+      </div>
+      <div>
         <h5 style={{ textAlign: "center" }}>skills & qualifications</h5>
         <div>
           {skillsAndQualificationDocuments.map((document, indexDocument) => {

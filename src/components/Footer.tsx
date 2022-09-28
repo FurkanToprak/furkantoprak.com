@@ -1,6 +1,4 @@
 import React, { useState } from "react";
-import BookIcon from "./Icons/BookIcon";
-import HeartIcon from "./Icons/HeartIcon";
 import UpIcon from "./Icons/UpIcon";
 
 export default function Footer() {
@@ -33,3 +31,4 @@ export default function Footer() {
     </footer>
   );
 }
+ 
