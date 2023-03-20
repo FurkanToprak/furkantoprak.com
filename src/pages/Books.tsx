@@ -19,7 +19,6 @@ const books: ReadingSchema[] = [
         title: "Discrete Mathematics and Its Applications",
         author: "Kenneth H. Rosen",
     },
-    { title: "Maps of Meaning", author: "Jordan B. Peterson" },
     { title: "On The Social Contract", author: "Jean-Jacques Rousseau" },
     { title: "You Are Not So Smart", author: "David McRaney" },
     { title: "The Count of Monte Cristo", author: "Alexandre Dumas" },
@@ -34,7 +33,10 @@ const books: ReadingSchema[] = [
     { title: "Pimp", author: "Iceberg Slim" },
     { title: "The Prince", author: "Niccolo Machiavelli" },
     { title: "Crime and Punishment", author: "Fyodor Dostoevsky" },
-    { title: "Atlas Shrugged", author: "Ayn Rand"}
+    { title: "Atlas Shrugged", author: "Ayn Rand"},
+    { title: "What Men Live By", author: "Leo Tolstoy"},
+    { title: "Basic Economics: Fifth Edition", author: "Thomas Sowell"},
+    { title: "The Rise and Fall of the Third Reich: A History of Nazi Germany", author: "William L. Shirer"}
 ];
 
 const papers: ReadingSchema[] = [
