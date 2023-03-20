@@ -36,7 +36,14 @@ const books: ReadingSchema[] = [
     { title: "Atlas Shrugged", author: "Ayn Rand"},
     { title: "What Men Live By", author: "Leo Tolstoy"},
     { title: "Basic Economics: Fifth Edition", author: "Thomas Sowell"},
-    { title: "The Rise and Fall of the Third Reich: A History of Nazi Germany", author: "William L. Shirer"}
+    { title: "The Rise and Fall of the Third Reich: A History of Nazi Germany", author: "William L. Shirer"},
+    { title: "Lee Kuan Yew: The Grand Master's Insights on China, the United States, and the World ", author: "Robert D. Blackwill" },
+    { title: "Memories, Dreams, Reflections", author: "Carl Jung"},
+    { title: "The Gambler", author: "Fyodor Dostoevsky"},
+    { title: "The Wealth of Nations", author: "Adam Smith"},
+    { title: "One Up on Wall Street", author: "Peter Lynch"},
+    { title: "The Grapes of Wrath", author: "John Steinbeck"},
+    { title: "Talking to my Daughter About the Economy", author: "Yanis Varoufakis"}
 ];
 
 const papers: ReadingSchema[] = [
