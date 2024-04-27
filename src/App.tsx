@@ -1,12 +1,8 @@
 import { useState } from "react";
 import { HashRouter as Router, Switch, Route } from "react-router-dom";
-import Nav from "./components/Nav";
-import Footer from "./components/Footer";
 import ThemeContext from "./contexts/Theme";
 import About from "./pages/About";
-import Goals from "./pages/Goals";
-import Projects from "./pages/Projects";
-import Books from "./pages/Books";
+import Turkish from "./pages/Turkish";
 
 function App() {
   const defaultTheme = localStorage.getItem("theme") || "light";
@@ -31,7 +27,6 @@ function App() {
     >
       <ThemeContext.Provider value={{ theme, toggleTheme }}>
         <div style={{ display: "flex", flexDirection: "column" }}>
-          <Nav />
           <div
             style={{
               minHeight: "100%",
@@ -42,24 +37,17 @@ function App() {
           >
             <Router>
               <Switch>
-                <Route exact path={"/"}>
+              <Route exact path={"/"}>
                   <About />
                 </Route>
-                <Route exact path={"/projects"}>
-                  <Projects />
-                </Route>
-                <Route exact path={"/books"}>
-                  <Books/>
-                </Route>
-                <Route exact path={"/goals"}>
-                  <Goals/>
+                <Route exact path={"/turkish"}>
+                  <Turkish />
                 </Route>
               </Switch>
             </Router>
           </div>
         </div>
       </ThemeContext.Provider>
-      <Footer />
     </div>
   );
 }
